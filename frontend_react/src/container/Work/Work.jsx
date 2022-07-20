@@ -41,7 +41,7 @@ const Work = () => {
         Section
       </h2>
       <div className='app__work-filter'>
-        {['Web App', 'JavaScript', 'React JS', 'Css', 'Html', 'All'].map(
+        {['Web App', 'JavaScript', 'ReactJs', 'Css', 'Html', 'All'].map(
           (item, index) => (
             <div
               key={index}
@@ -83,7 +83,7 @@ const Work = () => {
                     }}
                     className='app__flex'
                   >
-                    <AiFillEye />
+                    {/* <AiFillEye /> */}
                   </motion.div>
                 </a>
                 <a href={work.codeLink} target='_blank' rel='noreferrer'>
