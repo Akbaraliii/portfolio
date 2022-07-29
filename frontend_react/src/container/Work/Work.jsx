@@ -83,7 +83,7 @@ const Work = () => {
                     }}
                     className='app__flex'
                   >
-                    {/* <AiFillEye /> */}
+                    <AiFillEye />
                   </motion.div>
                 </a>
                 <a href={work.codeLink} target='_blank' rel='noreferrer'>
@@ -117,4 +117,4 @@ const Work = () => {
   )
 }
 
-export default AppWrap(MotionWrap(Work, 'app__works'), 'work', 'app__primarybg')
+export default AppWrap(MotionWrap(Work, 'app__work'), 'work', 'app__primarybg')
