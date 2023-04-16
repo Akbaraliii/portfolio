@@ -1,8 +1,8 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { AppWrap } from '../../wrapper'
-import { images } from '../../constants'
-import './Header.scss'
+import React from "react";
+import { motion } from "framer-motion";
+import { AppWrap } from "../../wrapper";
+import { images } from "../../constants";
+import "./Header.scss";
 
 const scaleVariants = {
   whileInView: {
@@ -10,10 +10,10 @@ const scaleVariants = {
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
-}
+};
 
 const Header = () => {
   return (
@@ -45,7 +45,7 @@ const Header = () => {
         <img src={images.profile} alt='profile_bg' />
         <motion.img
           whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           src={images.circle}
           alt='profile_circle'
           className='overlay_circle'
@@ -57,14 +57,14 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className='app__header-circles'
       >
-        {[images.javascript, images.react, images.css].map((circle, index) => (
+        {[images.javascript, images.vue, images.css].map((circle, index) => (
           <div className='circle-cmp app__flex' key={`circle -${index}`}>
             <img src={circle} alt='circle' />
           </div>
         ))}
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default AppWrap(Header, 'home')
+export default AppWrap(Header, "home");
